@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulaire</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<div class="formContainer">
+
+		<h1>Commande</h1>
+		<h2>Faculté genie electrique</h2>
+
+		<form name="form1" class="form1">
+			<h3>Informations Personnelles :</h3>
+			<div class="formSection">
+				<div class="formItem">
+					<p>Nom : </p>
+					<input type="text" name="nomDem" id="nomDem">
+				</div>
+
+				<div class="formItem">
+					<p>Prenom : </p>
+					<input type="text" name="prenom" id="prenomDem">
+				</div>
+
+				<div class="formItem">
+					<p>Mot-Passe : </p>
+					<input type="password" name="motpasse" id="motPasseDem">
+				</div>
+
+				<div class="formItem">
+					<p>Email : </p>
+					<input type="email" name="mail" id="emailDem">
+				</div>
+			</div>
+			<h3>Vous souhaiter commander des livres pour quelle spécialité :</h3>
+
+			<div class="formSection">
+
+
+				<div class="formItem formItemWide">
+					<div class="choix">
+						<input type="radio" name="spec" value="Electronique" class="spec">
+						<p>Electronique</p>
+					</div>
+					<div class="choix">
+						<input type="radio" name="spec" value="Electrotechnique" class="spec">
+						<p>Electrotechnique</p>
+					</div>
+					<div class="choix">
+						<input type="radio" name="spec" value="Automatique" class="spec">
+						<p>Automatique</p>
+					</div>
+				</div>
+			</div>
+			<h3>Pour quelle niveau : </h3>
+			<div class="formSection">
+				<div class="formItem formItemWide">
+					<div class="choix">
+						<input type="radio" value="licence" class="niv" name="niv">
+						<p>Licence</p>
+					</div>
+					<div class="choix">
+						<input type="radio" value="master" class="niv" name="niv">
+						<p>Master</p>
+					</div>
+					<div class="choix">
+						<input type="radio" value="autres" class="niv" name="niv">
+						<p>Autres</p>
+					</div>
+				</div>
+
+			</div>
+
+			<h3>Pour quelle option </h3>
+			<div class="formSection">
+				<select  id="optionChoisie">
+					<option value="Imagerie">Imagerie</option>
+					<option value="Informatique">Informatique</option>
+				
+				</select>
+			</div>
+
+			<h3>Informations sur le Livre : </h3>
+			<div class="formSection">
+
+				<div class="formItem">
+					<p>Intitulé : </p>
+					<input type="text" name="intitule" id="intitule">
+				</div>
+
+				<div class="formItem">
+					<p>Auteur : </p>
+					<input type="text" name="auteur" id="auteur">
+				</div>
+
+				<div class="formItem">
+					<p>Maison d'edition : </p>
+					<input type="text" name="maisonEdition" id="maisonEdition">
+				</div>
+
+				<div class="formItem">
+					<p>Année d'edition : </p>
+					<input type="number" name="anneeEdition" id="anneeEdition">
+				</div>
+
+				<div class="formItem">
+					<p>Date d'emprunt : </p>
+					<input type="date" name="dateEmprunt" id="dateEmprunt">
+				</div>
+
+				<div class="formItem">
+					<p>Date de retour : </p>
+					<input type="date" name="dateRetour" id="dateRetour">
+				</div>
+			</div>
+
+			<div class="formButtons">
+				<button type="button" onclick="envoi()" class="bttn">Envoyer</button>
+				<button type="button" class="bttn" onclick="supp()">Effacer</button>
+				<button type="button" class="bttn" onclick="annuler()">Annuler</button>
+			</div>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+
+</body></html>
